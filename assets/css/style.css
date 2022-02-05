@@ -1,0 +1,131 @@
+.content {
+	display: flex;
+	height: 98vh;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+}
+
+h1 {
+	width: 30rem;
+	text-align: center;
+}
+
+.ticTacToe {
+	width: 30rem;
+	height: 30rem;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-gap: 10px;
+	background: black;
+}
+
+.ticTacToe div {
+	min-width: 1rem;
+	min-height: 1rem;
+	position: relative;
+	background: white;
+}
+
+.ticTacToe__case {
+	margin: 0;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	font-size: 4rem;
+}
+
+.info {
+	width: 30rem;
+	display: flex;
+	justify-content: space-around;
+}
+
+#launchGame {
+	background-color: cornflowerblue;
+	padding: 1rem;
+	border-radius: 1rem;
+	cursor: pointer;
+	font-weight: bold;
+}
+
+#score {
+	background-color: cornflowerblue;
+	padding: 1rem;
+	border-radius: 1rem;
+	text-align: center;
+	font-weight: bold;
+}
+
+.centreXY {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-content: center;
+}
+
+#message {
+	position: absolute;
+	height: 20rem;
+	width: 30rem;
+	background-color: rgba(0, 0, 0, 0.7);
+	color: white;
+	font-size: 2rem;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	/*display: flex;*/ /* Appliqué en JS quand il faut afficher la fenettre */
+	align-items: center;
+	justify-content: center;
+	border-radius: 2rem;
+}
+
+#message div {
+	text-align: center;
+}
+
+#croix {
+	position: absolute;
+	top: 1rem;
+	right: 1rem;
+	height: 3rem;
+	width: 3rem;
+	background-color: rgba(255, 255, 255, 0.3);
+	border-radius: 1rem;
+	border: 1px solid black;
+	cursor: pointer;
+}
+
+.hidden {
+	display: none;
+}
+
+footer {
+	width: 30rem;
+}
+
+footer p{
+	text-align: center;
+  font-size: 0.8em;
+}
+
+@media (max-width: 576px) {
+
+	.info {
+		width: 100%;
+	}
+	.ticTacToe {
+		position: relative;
+		width: 100%;
+		height: 30rem;
+		left: 0%;
+		top: 0%;
+		transform: translate(-0%, -0%);
+	}
+	
+	#message {
+		position: absolute;
+		width: 100%;
+	}
+}

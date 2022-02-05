@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="assets/css/style.css">
+	<title>Jeu du morpion</title>
+</head>
+<body>
+	<div class="content">
+		<div>
+			<h1>Jeu du morpion</h1>
+			<div class="info">
+				<p class= "centreXY" id="launchGame">Démarer partie</p>
+				<p class= "centreXY" id="score">
+					<span>Scores</span>
+					<span>X : <span id="scoreX">0</span></span>
+					<span>O : <span id="scoreO">0</span></span>
+				</p>
+			</div>
+		</div>
+		<div class="ticTacToe">
+			<div class="case">
+				<p class="ticTacToe__case"></p>
+			</div>
+			<div class="case">
+				<p class="ticTacToe__case"></p>
+			</div>
+			<div class="case">
+				<p class="ticTacToe__case"></p>
+			</div>
+			<div class="case">
+				<p class="ticTacToe__case"></p>
+			</div>
+			<div class="case">
+				<p class="ticTacToe__case"></p>
+			</div>
+			<div class="case">
+				<p class="ticTacToe__case"></p>
+			</div>
+			<div class="case">
+				<p class="ticTacToe__case"></p>
+			</div>
+			<div class="case">
+				<p class="ticTacToe__case"></p>
+			</div>
+			<div class="case">
+				<p class="ticTacToe__case"></p>
+			</div>
+		</div>
+		<div id="message" class="hidden">
+			<div id="croix">X</div>
+			<div>
+				<p>Message :</p>
+				<p id="message2"></p>
+				<button id="replay">Rejouer</button>
+			</div>
+		</div>
+		<footer>
+				<p>Jeu du morpion réalisé en JavaScript dans le cadre de la formation developeur Web de webForce3.<br>
+				Le code source du jeu est disponible sur mon <a href="https://github.com/yannickHonore/jeu-du-serpent">GitHub</a></p>
+		</footer>
+	</div>
+	<script src="assets/js/script.js"></script>
+</body>
+</html>
